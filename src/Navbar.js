@@ -11,11 +11,11 @@ function Navbar() {
           <div className="header-contacts">
           <div className="wrapper">
             <div className="item">
-              <img src={clock} />
+              <img src={clock} alt="" />
               <p>I-V: 08:00 - 17:00</p>
             </div>
             <div className="item">
-              <img src={phone} />
+              <img src={phone} alt="" />
               <p>8 617 26444</p>
             </div>
           </div>
@@ -23,7 +23,7 @@ function Navbar() {
           <div className="flex-center">
             <div className="wrapper">
             <div className="logo">
-              <Link to="/"><img src={logo} /></Link>
+              <Link to="/"><img src={logo} alt="" /></Link>
             </div>
             <div className="menu">
               <ul>

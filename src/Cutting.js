@@ -31,28 +31,28 @@ function Cutting() {
                     <div className="fanera-grid">
                         <div className="item">
                             <div className="borders">
-                                <img src={supjovimas} />
+                                <img src={supjovimas} alt="" />
                             </div>
                             <h3>SUPJOVIMAS</h3>
                             <p>Pagal jūsų pateiktus matmenis pjauname baldines bei statybines plokštes formatinio pjovimo staklėmis SI 400CLASS, pagamintos italų gamintojo SCM GROUP.</p>
                         </div>
                         <div className="item">
                             <div className="borders">
-                                <img src={obliavimas} />
+                                <img src={obliavimas} alt="" />
                             </div>
                             <h3>OBLIAVIMAS</h3>
                             <p>Reismusinėmis obliavimo stakėmis SCM CLASS S520 – kokybiškai ir tiksliai suteikiame medienos obliavomo paslaugą. </p>
                         </div>
                         <div className="item">
                             <div className="borders">
-                                <img src={frezavimas} />
+                                <img src={frezavimas} alt="" />
                             </div>
                             <h3>FREZAVIMAS</h3>
                             <p>Profesionaliomis italų gamybos SCP Class TI 120 siūlome frezavimo ir gręžimo paslaugas.</p>
                         </div>
                         <div className="item">
                             <div className="borders">
-                                <img src={grezimas} />
+                                <img src={grezimas} alt="" />
                             </div>
                             <h3>GRĘŽIMAS</h3>
                             <p>Ne tik frezuojame medienos plokštes, taip pat išpjaustome tikslias skyles tolimesniam darbui  pusiau automatinu gręžimo įrenginiu – VITAP.</p>

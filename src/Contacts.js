@@ -43,15 +43,15 @@ function Contacts() {
                 <div className="boxes-row">
                     <div className="item">
                         <p><strong>TELEFONAS</strong><br/>8 617 26444</p>
-                        <img src={phone} />
+                        <img src={phone} alt="" />
                     </div>
                     <div className="item">
                         <p><strong>EL. PAŠTAS</strong><br/>info@uvlc.lt</p>
-                        <img src={email} />
+                        <img src={email} alt="" />
                     </div>
                     <div className="item">
                         <p><strong>ADRESAS</strong><br/>Deltuvos g. 39B, Ukmergė</p>
-                        <img src={location} />
+                        <img src={location} alt="" />
                     </div>
                 </div>
                 <div className="form">
@@ -66,9 +66,15 @@ function Contacts() {
                         <label>Žinutė</label>
                         <input type="text" onChange={(e) => setFields({...fields, message: e.target.value})}></input>
                         <input type="submit" value="Siųsti" onClick={() => handleSubmit()}></input>
+                        {
+                            showError && <div style={{ color: 'red'}}>Užpildykite visus laukelius</div>
+                        }
+                        {
+                            showSuccess && <div style={{ color: 'green'}}>Laiškas išsiųstas. Netrukus atsakysime.</div>
+                        }
                     </form>
                     <div className="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.3823019021115!2d24.732220915742673!3d55.246525780420995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e79858d127fe37%3A0x188b015acece07f3!2sDeltuvos%20g.%2039B%2C%20Ukmerg%C4%97%2020126!5e0!3m2!1slt!2slt!4v1631091806821!5m2!1slt!2slt" allowfullscreen="" loading="lazy" />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.3823019021115!2d24.732220915742673!3d55.246525780420995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e79858d127fe37%3A0x188b015acece07f3!2sDeltuvos%20g.%2039B%2C%20Ukmerg%C4%97%2020126!5e0!3m2!1slt!2slt!4v1631091806821!5m2!1slt!2slt" allowfullscreen="" title="langu centras" loading="lazy" />
                     </div>
                 </div>
             </div>

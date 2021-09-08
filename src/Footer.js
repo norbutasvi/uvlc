@@ -10,16 +10,16 @@ function Footer() {
           <div className="wrapper">
             <div className="col">
               <div className="logo">
-                <img src={logo} />
+                <img src={logo} alt="" />
               </div>
               <strong>UAB "UKMERGĖS VERSMĖS" LANGŲ CENTRAS</strong><br />
               Įmonės kodas: 183219083<br />
               Adresas: Deltuvos g. 39B, LT-20126 Ukmergė
             </div>
             <div className="col links">
-              <Link to="/plastikiniai-langai"><p><img src={pointer} />Plastikiniai langai</p></Link>
-              <Link to="/faneros-pjaustymas"><p><img src={pointer} />Faneros pjaustymas</p></Link>
-              <Link to="/statybine-mediena"><p><img src={pointer} />Statybinė mediena</p></Link>
+              <Link to="/plastikiniai-langai"><p><img src={pointer} alt="" />Plastikiniai langai</p></Link>
+              <Link to="/faneros-pjaustymas"><p><img src={pointer} alt="" />Faneros pjaustymas</p></Link>
+              <Link to="/statybine-mediena"><p><img src={pointer} alt="" />Statybinė mediena</p></Link>
             </div>
             <div className="col">
               <h4>KONTAKTAI</h4>

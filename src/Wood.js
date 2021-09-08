@@ -75,7 +75,7 @@ function Wood() {
                         </tbody>
                     </table>
                     <div className="information">
-                        <img src={info} />
+                        <img src={info} alt=""/>
                         <p>
                         Pjautinė mediena ir jos gaminiai tiekiami pagal išankstinius užsakymus.<br/>
                         Išankstiniai užsakymai priimame el.paštu mediena@uvlc.lt. Dėl kainų teirautis tel.: 8 617 26444

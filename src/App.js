@@ -41,7 +41,7 @@ function App() {
             transition={{type: 'tween'}}
           >
           <div className="close-btn" onClick={() => setShowMenu(false)}>
-            <img src={close} />
+            <img src={close} alt="" />
           </div>
           <div className="wrapper">
             <ul>
@@ -63,11 +63,11 @@ function App() {
             </ul>
             <div className="mobile-contacts">
             <div className="item">
-                <img src={clock} />
+                <img src={clock} alt="" />
                 <p>I-V: 08:00 - 17:00</p>
               </div>
               <div className="item">
-                <img src={phone} />
+                <img src={phone} alt="" />
                 <p>8 617 26444</p>
               </div>
           </div>
@@ -76,9 +76,9 @@ function App() {
         }
       </AnimatePresence>
       <div className="mobile-nav">
-        <Link to="/"><img src={logo} className="logo"/></Link>
+        <Link to="/"><img src={logo} className="logo" alt=""/></Link>
         <div className="mobile-button" onClick={() => setShowMenu(true)}>
-          <img src={hamburger} />
+          <img src={hamburger} alt="" />
         </div>
       </div>
       <SimpleReactLightbox>

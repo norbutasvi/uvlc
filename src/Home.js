@@ -5,7 +5,6 @@ import 'swiper/swiper-bundle.css';
 
 import langai from './images/langai.jpeg';
 import mediena from './images/mediena.jpeg';
-import apie from './images/apie.jpeg';
 import fanera from './images/fanera.jpeg';
 import arrow from './images/arrow2.svg';
 import home from './images/home.jpeg';
@@ -54,6 +53,7 @@ function Home() {
                             className="arrow" 
                             initial={{ x: 0}}
                             animate={{ x: hovered ? 10 : 0 }}
+                            alt=""
                           />
                         Daugiau
                     </motion.div>
@@ -108,7 +108,7 @@ function Home() {
         <div className="about">
           <div className="wrapper">
             <div className="about-image">
-              <img src={home} />
+              <img src={home} alt=""/>
             </div>
             <p data-aos={'fade-up'} className="text">
               <h3>APIE MUS</h3>
