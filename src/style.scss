@@ -1,0 +1,632 @@
+$orange: #CC5C2C;
+
+@mixin phone {
+    @media only screen and (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: 1040px) {
+        @content;
+    }
+}
+
+@mixin miniDesktop {
+    @media only screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+h1, h2 {
+    margin: 0px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @include miniDesktop {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+
+    @include phone {
+        display: none;
+    }
+
+    .header-contacts {
+        border-bottom: 1px solid rgb(221, 221, 221);
+        font-size: 12px;
+
+        .wrapper {
+            display: flex;
+            justify-content: flex-end;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin: 5px;
+    
+                img {
+                    height: 18px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .flex-center {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+            .logo {
+                img {
+                    height: 120px;
+                }
+            }
+        
+            .menu {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+        
+                    li {
+                        font-weight: 600;
+                        padding: 10px;
+                        cursor: pointer;
+        
+                        &:hover {
+                            box-shadow: inset 0 -3px 0 $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mediena {
+    color: white;
+}
+
+.slider-container {
+    .swiper-slide {
+        .slide-item {
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include phone {
+                height: 40vh;
+            }
+
+            h1 {
+                font-size: 50px;
+                position: absolute;
+                top: 40%;
+                left: 20%;
+                text-shadow: 2px 1px 3px rgba(150, 150, 150, 1);
+
+                @include phone {
+                    font-size: 30px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 60%;
+                }
+
+                .button {
+                    position: relative;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: 200;
+                    background: black;
+                    color: white;
+                    cursor: pointer;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 10px;
+
+                    &:hover {
+                        background: $orange;
+                        transition: 0.4s ease;
+                    }
+
+                    .arrow {
+                        height: 20px;
+                        margin-right: 10px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white !important;
+}
+
+.about {
+    margin: 50px 0px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        .about-image {
+            width: 45%;
+            padding: 50px;
+
+            @include phone {
+                width: 100%;
+                padding: 0px 0px 30px 0px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    
+        .text {
+            width: 45%;
+            font-size: 16px;
+            padding: 50px;
+            border-left: 5px dashed $orange;
+
+            @include phone {
+                width: 100%;
+                padding: 10px;
+                border-top: 5px dashed $orange;
+                border-left: none;
+            }
+
+            h3 {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 50px 0px;
+
+    .wrapper {
+        display: flex;
+        
+        @include phone {
+            flex-direction: column;
+        }
+
+        .col {
+            width: 33%;
+
+            @include phone {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .logo {
+                img {
+                    width: 200px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    margin-right: 7px;
+                    background: white;
+                }
+            }
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+        .links {
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            @include phone {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    background: black;
+    color: white;
+    padding: 5px 0px;
+    border-top: 1px solid grey;
+
+    a {
+        color: white;
+    }
+}
+
+.service-title {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    opacity: 1;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0px 0px 277px 3px #4c3f37;
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+
+        @include phone {
+            margin: 0px 20px;
+        }
+    }
+}
+
+.windows-content {
+    padding: 50px 0px;
+
+    p {
+        margin: 15px 0px;
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        width: 48%;
+
+        @include phone {
+            width: 80%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.fanera-content {
+    padding: 50px 0px;
+}
+
+.fanera-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include phone {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 45%;
+
+        @include phone {
+            width: 100%;
+        }
+
+        .borders {
+            height: 400px;
+
+            @include phone {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            @include tablet {
+                height: 250px;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.wood-content {
+    padding: 50px 0px;
+
+    @include phone {
+        padding: 30px 0px;
+    }
+
+    .wrapper {
+        @include phone {
+            width: 100%;
+        }
+    }
+
+    .sizes-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .information {
+        margin: 50px 0px;
+        background: $orange;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        color: white;
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        img {
+            height: 40px;
+            margin-right: 10px;
+            fill: white;
+            color: white;
+
+            @include phone {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+    @include phone {
+        padding: 8px 0px;
+    }
+  }
+
+  table {
+      margin: 0 auto;
+      width: 100%;
+
+      @include phone {
+          font-size: 8px;
+          text-transform: uppercase;
+      }
+
+      thead, .bold {
+          font-weight: 700;
+      }
+  }
+
+  
+
+.swiper-pagination-bullet-active {
+    background: $orange !important;
+}
+
+
+.swiper-pagination-bullet {
+    height: 15px !important;
+    width: 15px !important;
+
+    @include phone {
+        display: none !important;
+    }
+}
+
+.mobile-nav {
+    justify-content: space-between;
+    display: none;
+    align-items: center;
+
+    @include phone {
+        display: flex;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .mobile-button {
+        img {
+            height: 100%;
+            margin: 10px;
+        }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .close-btn {
+        height: 50px;
+
+        img {
+            height: 40px;
+            position: absolute;
+            right: 0;
+            margin: 10px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            border-bottom: 3px solid $orange;
+            padding: 7px 0px;
+        }
+    }
+
+    .mobile-contacts {
+        margin-top: 10px;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+
+            img {
+                margin-right: 7px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.boxes-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+        padding: 30px;
+        background-color: $orange;
+        color: white;
+
+        @include phone {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    form {
+        width: 45%;
+
+        @include phone {
+            width: 100%;
+        }
+
+        input {
+            display: block;
+            background: $orange;
+            border: none;
+            margin-bottom: 20px;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            font-family: 'Poppins', sans-serif;
+            width: auto;
+            font-weight: 300 !important;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+    }
+
+    .map {
+        width: 45%;
+
+        @include phone {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 50vh;
+            border: none;
+        }
+    }
+}
