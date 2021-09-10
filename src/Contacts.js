@@ -25,7 +25,7 @@ function Contacts() {
     const [showError, setShowError] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         if (fields.name.length < 1 || fields.phone.length < 1 || fields.email.length < 1 || fields.message.length < 1) {
             setShowError(true);
@@ -72,7 +72,7 @@ function Contacts() {
                         <input type="text" onChange={(e) => setFields({...fields, email: e.target.value})}></input>
                         <label>Žinutė</label>
                         <input type="text" onChange={(e) => setFields({...fields, message: e.target.value})}></input>
-                        <input type="submit" value="Siųsti" onClick={() => handleSubmit()}></input>
+                        <input type="submit" value="Siųsti" onClick={(e) => handleSubmit(e)}></input>
                         {
                             showError && <div style={{ color: 'red'}}>Užpildykite visus laukelius</div>
                         }
