@@ -14,7 +14,8 @@ function Footer() {
               </div>
               <strong>UAB "UKMERGĖS VERSMĖS" LANGŲ CENTRAS</strong><br />
               Įmonės kodas: 183219083<br />
-              Adresas: Deltuvos g. 39B, LT-20126 Ukmergė
+              Adresas: Deltuvos g. 39B, LT-20126 Ukmergė<br />
+              Medienos cechas: Deltuvos g. 37B, Ukmergė (pravažiavus Regitrą)
             </div>
             <div className="col links">
               <Link to="/plastikiniai-langai"><p><img src={pointer} alt="" />Plastikiniai langai</p></Link>

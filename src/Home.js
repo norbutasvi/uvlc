@@ -112,7 +112,11 @@ function Home() {
             </div>
             <p data-aos={'fade-up'} className="text">
               <h3>APIE MUS</h3>
-              Esame medienos apdirbimo įmonė, įsikūrusi strategiškai patogioje vietoje, Ukmergės mieste (pravažiavus Regitrą). Įmonė UVLC Mediena  įkurta 2012 metais. Pagrindinė veiklos sritis – didmeninė ir mažmeninė prekyba statybine mediena ir jos gaminiais. Nuosavoje lentpjūvėje pjauname įvairaus storio ir dydžio lentas, lauko ir vidaus apdailos dailylentes, gegnes, bruselius (tašus), bei kitus medienos ruošinius.
+              UAB „Ukmergės Versmės langų centras” įmonė įkurta 2002 metais ir iki šios dienos gamina vokiškos
+              kokybės plastikinius langus iš Rehau profilio. Per visą laikotarpį įmonė nuolat augo ir plėtė savo gamybinius
+              pajėgumus. Šiandien nuosavose patalpose Ukmergėje specializuojamės ne tik plastikinių langų gamyboje,
+              bet ir iš italų gamintojo „SCM GROUP“ įsigytomis pramoninėmis staklėmis teikiame faneros ir medinių
+              plokščių apdirbimo paslaugas, pjauname statybinę medieną nuosavoje lentpjūvėje.
             </p>
           </div>
         </div>

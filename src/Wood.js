@@ -6,6 +6,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 import apie from './images/apie.jpeg';
 import paletes from './images/paletes.jpeg';
+import home from './images/home.jpeg';
 
 
 import AOS from 'aos';
@@ -25,6 +26,22 @@ function Wood() {
             </h1>
             <div className="wood-content">
                 <div className="wrapper">
+                    <div className="flex-center">
+                        <div className="about-image">
+                            <img src={home} alt=""/>
+                        </div>
+                        <p data-aos={'fade-up'} className="text">
+                            <h3>APIE MUS</h3>
+                            Esame medienos apdirbimo įmonė, įsikūrusi strategiškai
+                            patogioje vietoje, Ukmergės mieste (pravažiavus Regitrą).
+                            Įmonė UVLC Mediena  įkurta 2012 metais. Pagrindinė
+                            veiklos sritis – didmeninė ir mažmeninė prekyba statybine
+                            mediena ir jos gaminiais. Nuosavoje lentpjūvėje pjauname
+                            įvairaus storio ir dydžio lentas, lauko ir vidaus apdailos
+                            dailylentes, gegnes, bruselius (tašus), bei kitus medienos
+                            ruošinius.
+                        </p>
+                    </div>
                 <p className="sizes-text">Pagrindiniai matmenys (galimi ir kiti matmenys)</p>
                     <table>
                         <thead>
@@ -78,7 +95,7 @@ function Wood() {
                         <img src={info} alt=""/>
                         <p>
                         Pjautinė mediena ir jos gaminiai tiekiami pagal išankstinius užsakymus.<br/>
-                        Išankstiniai užsakymai priimame el.paštu mediena@uvlc.lt. Dėl kainų teirautis tel.: 8 617 26444
+                        Išankstiniai užsakymai priimame el.paštu info@uvlc.lt. Dėl kainų teirautis tel.: 8 617 26444
                         </p>
                     </div>
                     <p style={{textAlign:'center', marginBottom: '10px'}}>Taip pat nuolat turime ir prekiaujame medienos atraižomis, pjuvenomis.</p>

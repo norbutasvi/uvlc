@@ -7,6 +7,7 @@ import contact_us from './images/contact_us.jpg';
 import phone from './images/phone.svg';
 import email from './images/email.svg';
 import location from './images/location.svg';
+import axios from 'axios';
 
 function Contacts() {
 
@@ -25,12 +26,18 @@ function Contacts() {
     const [showSuccess, setShowSuccess] = useState(false);
 
     const handleSubmit = () => {
+        e.preventDefault();
         if (fields.name.length < 1 || fields.phone.length < 1 || fields.email.length < 1 || fields.message.length < 1) {
             setShowError(true);
         } else {
             setShowError(false);
-            setShowSuccess(true);
+
+            axios.post(`https://uvlc-emailer.herokuapp.com/api/forma`, fields)
+            .then(res => {
+                setShowSuccess(true);
+            })
         }
+
     }
 
     return (

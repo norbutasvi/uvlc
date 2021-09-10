@@ -12,7 +12,7 @@ function Navbar() {
           <div className="wrapper">
             <div className="item">
               <img src={clock} alt="" />
-              <p>I-V: 08:00 - 17:00</p>
+              <p>I-V: 07:00 - 16:00</p>
             </div>
             <div className="item">
               <img src={phone} alt="" />

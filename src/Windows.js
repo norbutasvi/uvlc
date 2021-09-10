@@ -7,6 +7,8 @@ import fanera from './images/fanera.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { Link } from 'react-router-dom';
+
 function Windows() {
 
     useEffect(() => {
@@ -22,6 +24,9 @@ function Windows() {
             <div className="wrapper">
                 <div className="windows-content">
                     <p>
+                    <SRLWrapper>
+                    <a href={plastic} className="paragraph-image"><img src={plastic} alt="" title=""/></a>
+                    </SRLWrapper>
                     Plastikinius langus ir duris gaminame nuosavose patalpose Ukmergės mieste nuo 2002 metų.
                     </p>
                     <p>
@@ -36,15 +41,20 @@ function Windows() {
                     <p>
                     REHAU profiliai, lyginant juos su kitokiais pastaruoju metu naudojamais langų profiliais, turi nemažai privalumų, dėl to yra teigiamai vertinami klientų. Pagal aukščiausios klasės kokybės lygį gaminami šie langai pasižymi optimaliu energijos taupymu, puikia apsauga nuo iš gatvės sklindančio triukšmo ir dulkių, bei apsauga nuo įsilaužimo. Daugiau nei 60 metų rinkoje dalyvaujantys šie Vokietijos gamintojai klientams siūlo tik aukščiausio lygio gaminius.
                     </p>
+                    <div className="flex-paragraph">
+                    <SRLWrapper>
+                        <a href={fanera} className="paragraph-image-left"><img src={fanera} alt="" title=""/></a>
+                    </SRLWrapper>
+                    <div className="link">
                     <p>
                     Dirbame su idividualiais užsakymais, statybų įmonėmis, gaminame ir tiekiame montuotojų komandoms.
                     </p>
-                    <SRLWrapper>
-                    <div className="gallery">
-                        <a href={fanera}><img src={fanera} alt="" title=""/></a>
-                        <a href={plastic}><img src={plastic} alt="" title=""/></a>
+                    <p>Džiaugiamės sulaukę jūsų dėmesio!
+                    Atsakysime į visus rūpimus klausimus.
+                    </p>
+                    <Link to="/kontaktai">SUSISIEKTI</Link>
                     </div>
-                    </SRLWrapper>
+                    </div>
                 </div>
             </div>
         </div>

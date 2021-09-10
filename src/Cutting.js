@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
 
-import fanera from './images/fanera.jpeg';
 import supjovimas from './images/supjovimas.jpeg';
 import grezimas from './images/grezimas.jpg';
 import frezavimas from './images/frezavimas.jpeg';
 import obliavimas from './images/obliavimas.jpg';
-
+import fanera2 from './images/fanera2.jpeg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,7 +18,7 @@ function Cutting() {
 
     return (
         <div>
-            <h1 data-aos={'fade-up'} className="service-title" style={{ backgroundImage: `url(${fanera})`}}>
+            <h1 data-aos={'fade-up'} className="service-title" style={{ backgroundImage: `url(${fanera2})`}}>
                 FANEROS, BALDŲ PLOKŠTĖS APDIRBIMAS<br />
                 <p>Apdirbame fanerą ir baldines plokštes pagal individualius klientų poreikius</p>
             </h1>
