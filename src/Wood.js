@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import mediena from './images/mediena.jpeg';
+import mediena from './images/mediena.jpg';
 import info from './images/info2.svg';
 
 import { SRLWrapper } from "simple-react-lightbox";
 
-import apie from './images/apie.jpeg';
-import paletes from './images/paletes.jpeg';
-import home from './images/home.jpeg';
+import apie from './images/apie.jpg';
+import paletes from './images/paletes.jpg';
+import home from './images/home.jpg';
 
 
 import AOS from 'aos';

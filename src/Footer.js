@@ -24,7 +24,8 @@ function Footer() {
             </div>
             <div className="col">
               <h4>KONTAKTAI</h4>
-              <p>Telefonas: 8 617 26444</p>
+              <p>Statybinė mediena: 8 617 26444</p>
+              <p>Langai, gamyba: 860242491</p>
               <p>El. paštas: info@uvlc.lt</p>
             </div>
           </div>

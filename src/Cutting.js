@@ -4,10 +4,13 @@ import supjovimas from './images/supjovimas.jpeg';
 import grezimas from './images/grezimas.jpg';
 import frezavimas from './images/frezavimas.jpeg';
 import obliavimas from './images/obliavimas.jpg';
-import fanera2 from './images/fanera2.jpeg';
+import fanera2 from './images/fanera2.jpg';
+import apie from './images/darbai1.jpg';
+import paletes from './images/darbai2.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { SRLWrapper } from "simple-react-lightbox";
 
 
 function Cutting() {
@@ -56,6 +59,15 @@ function Cutting() {
                             <h3>GRĘŽIMAS</h3>
                             <p>Ne tik frezuojame medienos plokštes, taip pat išpjaustome tikslias skyles tolimesniam darbui  pusiau automatinu gręžimo įrenginiu – VITAP.</p>
                         </div>
+                    </div>
+                    <h2>ATLIKTI DARBAI</h2>
+                    <div className="works">
+                        <SRLWrapper>
+                        <div className="gallery">
+                            <a href={apie}><img src={apie} alt="" title=""/></a>
+                            <a href={paletes}><img src={paletes} alt="" title=""/></a>
+                        </div>
+                        </SRLWrapper>
                     </div>
                 </div>
             </div>

@@ -329,9 +329,20 @@ a {
         float: right;
         width: 50%;
 
+        @include phone {
+            float: none;
+            width: 100%;
+            // display: flex;
+            // justify-content: center;
+        }
+
         img {
             width: 100%;
             padding: 0px 0px 10px 30px;
+
+            @include phone {
+                padding: 0 0 10px 0;
+            }
         }
     }
 
@@ -342,12 +353,20 @@ a {
         img {
             width: 100%;
             padding: 0px 30px 10px 0px;
+
+            @include phone {
+                padding: 0 0 10px 0;
+            }
         }
     }
 
     .flex-paragraph {
         display: flex;
         align-items: center;
+
+        @include phone {
+            flex-direction: column;
+        }
 
         p {
             font-weight: 600;
@@ -390,6 +409,11 @@ a {
 
 .fanera-content {
     padding: 50px 0px;
+
+    h2 {
+        text-align: center;
+        margin: 50px 0px;
+    }
 }
 
 .fanera-grid {
@@ -726,6 +750,10 @@ th, td {
 //         height: 100px;
 //     }
 // }
+
+.loader {
+    width: 100px;
+}
 
 
 

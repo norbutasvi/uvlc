@@ -7,6 +7,7 @@ import contact_us from './images/contact_us.jpg';
 import phone from './images/phone.svg';
 import email from './images/email.svg';
 import location from './images/location.svg';
+import loader from './images/Loader.gif';
 import axios from 'axios';
 
 function Contacts() {
@@ -24,17 +25,21 @@ function Contacts() {
 
     const [showError, setShowError] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsLoading(true);
         if (fields.name.length < 1 || fields.phone.length < 1 || fields.email.length < 1 || fields.message.length < 1) {
             setShowError(true);
+            setIsLoading(false);
         } else {
             setShowError(false);
 
             axios.post(`https://uvlc-emailer.herokuapp.com/api/forma`, fields)
             .then(res => {
                 setShowSuccess(true);
+                setIsLoading(false);
             })
         }
 
@@ -78,6 +83,9 @@ function Contacts() {
                         }
                         {
                             showSuccess && <div style={{ color: 'green'}}>Laiškas išsiųstas. Netrukus atsakysime.</div>
+                        }
+                        {
+                            isLoading && <img className="loader" src={loader} alt=""/>
                         }
                     </form>
                     <div className="map">

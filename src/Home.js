@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination, Autoplay} from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-import langai from './images/langai.jpeg';
-import mediena from './images/mediena.jpeg';
-import fanera from './images/fanera.jpeg';
+import langai from './images/langai.jpg';
+import mediena from './images/mediena.jpg';
+import fanera from './images/fanera.jpg';
 import arrow from './images/arrow2.svg';
-import home from './images/home.jpeg';
+import home from './images/home.jpg';
 
 import { motion } from 'framer-motion';
 import AOS from 'aos';
@@ -112,7 +112,7 @@ function Home() {
             </div>
             <p data-aos={'fade-up'} className="text">
               <h3>APIE MUS</h3>
-              UAB „Ukmergės Versmės langų centras” įmonė įkurta 2002 metais ir iki šios dienos gamina vokiškos
+              UAB „Ukmergės Versmės langų centras” įmonė įkurta 2002 metais ir iki šios dienos gamina vokiškos
               kokybės plastikinius langus iš Rehau profilio. Per visą laikotarpį įmonė nuolat augo ir plėtė savo gamybinius
               pajėgumus. Šiandien nuosavose patalpose Ukmergėje specializuojamės ne tik plastikinių langų gamyboje,
               bet ir iš italų gamintojo „SCM GROUP“ įsigytomis pramoninėmis staklėmis teikiame faneros ir medinių

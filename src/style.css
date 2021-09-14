@@ -368,9 +368,22 @@ a {
   width: 50%;
 }
 
+@media only screen and (max-width: 700px) {
+  .windows-content .paragraph-image {
+    float: none;
+    width: 100%;
+  }
+}
+
 .windows-content .paragraph-image img {
   width: 100%;
   padding: 0px 0px 10px 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .windows-content .paragraph-image img {
+    padding: 0 0 10px 0;
+  }
 }
 
 .windows-content .paragraph-image-left {
@@ -383,6 +396,12 @@ a {
   padding: 0px 30px 10px 0px;
 }
 
+@media only screen and (max-width: 700px) {
+  .windows-content .paragraph-image-left img {
+    padding: 0 0 10px 0;
+  }
+}
+
 .windows-content .flex-paragraph {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +409,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .windows-content .flex-paragraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .windows-content .flex-paragraph p {
@@ -444,6 +472,11 @@ a {
 
 .fanera-content {
   padding: 50px 0px;
+}
+
+.fanera-content h2 {
+  text-align: center;
+  margin: 50px 0px;
 }
 
 .fanera-grid {
@@ -862,5 +895,9 @@ table thead, table .bold {
 
 .image-style-side {
   float: right;
+}
+
+.loader {
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */

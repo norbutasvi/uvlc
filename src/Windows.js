@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
-import langai from './images/langai.jpeg';
+import langai from './images/langai.jpg';
 import { SRLWrapper } from "simple-react-lightbox";
-import plastic from './images/plastic.jpeg';
-import fanera from './images/fanera.jpeg';
+import plastic from './images/plastic.jpg';
+import fanera from './images/fanera.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
