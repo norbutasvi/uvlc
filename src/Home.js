@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 
 import langai from './images/langai.jpg';
 import mediena from './images/mediena.jpg';
-import fanera from './images/fanera.jpg';
+import fanera from './images/fanera2.jpg';
 import arrow from './images/arrow2.svg';
 import home from './images/home.jpg';
 
